@@ -9,9 +9,12 @@
 <body class="login-page">
   <div class="login-container">
     <h1 class="login-title">Welcome to My Blog</h1>
-    <form id="login-form" class="login-form">
-      <input type="text" id="username" class="login-input" placeholder="Username" required />
+    <form id="login-form" class="login-form" >
+      
+      <input type="text" id="username" class="login-input" placeholder="Username" required minlength="3"/>
+      <div class="error-message" id="username-error"></div>
       <input type="password" id="password" class="login-input" placeholder="Password" required />
+      <div class="error-message" id="password-error"></div>
       <button type="submit" class="login-button">Login</button>
     </form>
     <div class="loader" id="loader" style="display: none;"></div>
@@ -20,3 +23,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
